@@ -1,0 +1,59 @@
+footer{
+  background-color: darkgoldenrod;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  position: -ms-page;
+  text-align: center;
+}
+footer p{
+  background-color: transparent;
+  font-size: 20px;
+}
+.container{
+    background-image: url(o\ simbolo\ perdido.jpg);
+    background-size: cover;
+    background-position: center;
+    place-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body p, h1, h2{
+    background-color: rgb(218, 207, 108);
+    border-radius: 5px;
+    color: black;
+}
+footer p{
+  background-color: transparent;
+  font-size: 20px;
+}
+.caixa-texto {
+      background-color: rgba(0, 0, 0, 0.6); 
+      color: white;
+      padding: 20px;
+      margin: 20px;
+      max-width: 1000px;
+      line-height: 1.2; 
+      font-size: 18px;
+      border-radius: 8px;
+    }
+.container p{
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+table{
+    background-color: white;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+thead{
+    background-color: rgb(218, 207, 108);
+    color: white;
+}

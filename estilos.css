@@ -1,10 +1,9 @@
-body, html {
+.container, html {
   background-image: url(fundo.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -16,14 +15,32 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: darkgreen;
+  background-color: darkgoldenrod;
   margin: 0;
   padding: 10px 0;
 }
 
 
-body {
-  margin-top: 80px;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 20px;
 }
 
 
@@ -38,10 +55,10 @@ body {
 
 
 .menu-horizontal li a {
-  color: white;
   text-decoration: none;
   padding: 8px 12px;
   display: block;
+  color: black;
 }
 
 .menu-horizontal li a:hover {
@@ -54,50 +71,69 @@ img {
   height: 200px;
   border-radius: 5px;
 }
-
-
-.lala {
-  font-size: 40px;
-  background-color: white;
-  border-radius: 5px;
-  display: inline-block;
-  padding: 10px;
-}
-
-
 h1, h2, p {
   background-color: white;
   border-radius: 5px;
   display: inline-block;
   padding: 10px;
 }
-
-
 th, td {
   padding: 0 30px;
   vertical-align: middle;
 }
-
-
 td.alinhado {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
-
 .Dan table tr td,
 .Agatha table tr td {
   background-color: white;
   border-radius: 5px;
   padding: 10px;
 }
-
-
-
-
 .livros {
   display: grid;
   place-items: center;
   height: 100vh;
+  color: white;
 }
+.livros img{
+  width: 350px;
+  height: 450px;
+}
+footer{
+  background-color: darkgoldenrod;
+  
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.livros td a{
+  font-size: 25px;
+  color: white;
+}
+footer p{
+  background-color: transparent;
+  font-size: 20px;
+}
+.Agatha img{
+  width: 300px;
+  height: 350px;
+}
+.Dan img{
+  width: 300px;
+  height: 350px;
+}
+.livros h2{
+  color: black;
+}
+.Agatha, .Dan{
+  place-items: center;
+}
+
+
+
+
